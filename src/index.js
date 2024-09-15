@@ -14,6 +14,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/usuarios', (req, res) => res.send('Estas en usuarios'))
+app.get('/proveedores', (req, res) => res.send('Estas en proveesodres'))
 
 /**
  * Configuracion del servidor

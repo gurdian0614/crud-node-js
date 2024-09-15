@@ -1,20 +1,4 @@
-import express from 'express'
-
-const app = express()
-
-/**
- * Llamado del metodo http
- * Primer parametro: ruta
- * Segundo parametro: callback
- * req: llamada
- * res: respuesta
- */
-app.get('/', (req, res) => {
-    res.send("Hello World")
-})
-
-app.get('/usuarios', (req, res) => res.send('Estas en usuarios'))
-app.get('/proveedores', (req, res) => res.send('Estas en proveesodres'))
+import app from './app.js'
 
 /**
  * Configuracion del servidor

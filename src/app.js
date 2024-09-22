@@ -8,6 +8,6 @@ app.use(express.json())
 
 //Routes
 app.use('/', employeesRoutes)
-app.use((req, res) => res.status(404).json({ message: "Not found"}))
+app.use((req, res) => res.status(404).json({ message: "Ruta incorrecta"}))
 
 export default app
